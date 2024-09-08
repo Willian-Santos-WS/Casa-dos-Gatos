@@ -5,70 +5,264 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/fee56d5520.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
   <title>Casa Dos Gatos</title>
 </head>
+
 <body>
-  <section id="home">
+  <button id="botaoMenu" onclick="openMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <nav id="navMenu">
+    
+    <button id="closeMenu" onclick="closeMenu()">X</button>
+
+    <ul>
+      <li id="home"><a href="#secHome">INÍCIO  <i class="fa-solid fa-home"></i></a></li>
+      <li><a href="#secSobre">SOBRE NÓS</a></li>
+      <li><a href="#secRelatos">RELATOS</a></li>
+      <li><a href="#secAdocao">ADOTE</a></li>
+      <li><a href="#secDoacao">DOAÇÃO</a></li>
+      <li><a href="#secFacaParte">FAÇA PARTE</a></li>
+
+    </ul>
+  </nav>
+  
+  
+
+  <section id="secHome">
     <header>
-      <ul>
-        <li><a href="#home">Home</a></li>|
-        <li><a href="#sobre">Quem somos</a></li>|
-        <li><a href="#miaus">Nossos Miaus</a></li>|
-        <li><a href="#doacao">Doação</a></li>|
-        <li><a href="#voluntario">Faça parte</a></li>
-      </ul>
+      <a href="#secHome" id="logo">
+        <img src="Imagens/logo-CDG.png" alt="Logo Casa dos Gatos">
+        <div>
+          <h1>CDG</h1>
+          <h2>Casa dos Gatos</h2>
+        </div>
+      </a>
+  
+      <nav>
+        <ul id="navHeader">
+          <li><a id="inicio" href="#secHome"><i class="fa-solid fa-home"></i> INÍCIO</a></li>
+          <li><a href="#secSobre">SOBRE NÓS</a></li>
+          <li><a href="#secRelatos">RELATOS</a></li>
+          <li><a href="#secAdocao">ADOTE</a></li>
+          <li><a href="#secDoacao">DOAÇÃO</a></li>
+          <li><a href="#secFacaParte">FAÇA PARTE</a></li>
+        </ul>
+      </nav>
+  
+      <button id="menuHeader" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
 
-    <div id="apresentacao">
-      <div id="text">
-        <h1>OLÁ, SEJA BEM VINDO AO NOSSO GATIL!</h1>
-      <br>
-        <p>Como toda nossa organização, este site também é um projeto sem fins lucrativos. Nele você encontrará alguns dos nossos felinos e, se desejar, encontrará dicas de como adotar seu novo gatinho ou de como fazer parte deste projeto.</p>
+    <span id="instNavegue">
+      <h3>Navegue entre as páginas</h3>
+      <i class="fa-solid fa-turn-up"></i>
+    </span>
+    
+    <div id="homeApresentation">
+      <h2>Porque o amor não cabe em uma vida...</h2>
+      <img src="Imagens/gatinho-branco-menor.jpeg" alt="Gato fofinho">
+    </div>
 
-        <h3>Navegue pelo site e venha fazer parte desta linda causa!</h3>
+    <ul id="navHome">
+      <li id="homeFacaParte">
+        <a href="#secFacaParte">Faça parte deste projeto!</a>
+      </li>
+
+      <li id="homeAdote">
+        <a href="#secAdote">Conheça seu felino</a>
+      </li>
+    </ul>
+    
+    <footer>
+      <h3>Contate-nos em nossas redes sociais!</h3>
+
+      <div>
+        <a id="insta" href="https://www.instagram.com/cdg.araraquara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+        <a id='whatsapp' href= "https://bit.ly/3OG8R9z" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+          Whatsapp
+        </a>
       </div>
-      <img src="Imagens/Home-CDG.jpeg" alt="Casa dos Gatos - Adoção">
-    </div>
+    </footer>
   </section>
 
-  <section id="sobre">
+  <section id="secSobre">
+    <h2>Quem somos?</h2>
     
+    <ul>
+      <li><button class="optionsSobre" onclick="openDesc('gatil')">O Gatil</button></li>
+      <li><button class="optionsSobre" onclick="openDesc('historia')">Nossa História</button></li>
+      <li><button class="optionsSobre" onclick="openDesc('missao')">Missão</button></li>
+      <li><button class="optionsSobre" onclick="openDesc('ajude')">Como ajudar</button></li>
+    </ul>
+
+
+
+
+
+
+
   </section>
 
-  <section id="miaus">
-    <h1 id="nossosMiaus">NOSSOS MIAUS</h1>
+  <section id="secRelatos">
+    <h2>Algumas Histórias</h2>
 
-    <div id="layoutFotos">
-      <img class="gatosDisponiveis" src="Imagens/Pandora.jpeg" 
-            onclick="descricao(this, 'Pandora - 1 ano', 'Encontrada na Rua Francisco Solidão, castrada, dócil e corajosa.')" alt="">
-      <img class="gatosDisponiveis" src="Imagens/Romeu.jpeg" onclick="descricao(this, 'oi', 'oi')" alt="">
-      <img class="gatosDisponiveis" src="Imagens/Nino.jpeg" onclick="descricao(this, 'oi', 'oi')" alt="">
-      <img class="gatosDisponiveis" src="Imagens/Pandora.jpeg" onclick="descricao(this, 'oi', 'oi')" alt="">
-      <img class="gatosDisponiveis" src="Imagens/Romeu.jpeg" onclick="descricao(this, 'oi', 'oi')" alt="">
-      <img class="gatosDisponiveis" src="Imagens/Nino.jpeg" onclick="descricao(this, 'oi', 'oi')" alt="">
+    <ul>
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Vitória e Apolo</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Vitória e Apolo</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Vitória e Apolo</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Vitória e Apolo</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+
+      <li>
+        <button class="relato" onclick="openRelato()">
+          <div class="nomeRelato">Nome</div>
+        </button>
+      </li>
+    </ul>
+
+    <h3>Envie-nos seu relato no Whatsapp!</h3>
+    <a href=""></a>
+
+    <div id="relatoDesc">
       
-      
+
     </div>
-
-    <div id="descricao">
-      <button id="fechar" onclick="fechar(this)">X</button>
-      <h1 id="nomeDesc"></h1>
-      <img id="fotoDesc" src="" alt="">
-      <p id="textoDesc"></p>
-    </div>
-
   </section>
 
-  <section id="doacao">
-    
-  </section>
 
-  <section id="voluntario">
-    
-  </section>
 </body>
 </html>
