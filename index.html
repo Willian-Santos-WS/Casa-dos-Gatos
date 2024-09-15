@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobileStyle.css">
   <script src="https://kit.fontawesome.com/fee56d5520.js" crossorigin="anonymous"></script>
   <script src="script.js" defer></script>
   <title>Casa Dos Gatos</title>
@@ -36,8 +37,6 @@
     </ul>
   </nav>
   
-  
-
   <section id="secHome">
     <header>
       <a href="#secHome" id="logo">
@@ -80,7 +79,7 @@
       </li>
 
       <li id="homeAdote">
-        <a href="#secAdote">Conheça seu felino</a>
+        <a href="#secAdocao">Conheça seu felino</a>
       </li>
     </ul>
     
@@ -109,160 +108,255 @@
       <li><button class="optionsSobre" onclick="openDesc('missao')">Missão</button></li>
       <li><button class="optionsSobre" onclick="openDesc('ajude')">Como ajudar</button></li>
     </ul>
-
-
-
-
-
-
-
   </section>
 
   <section id="secRelatos">
-    <h2>Algumas Histórias</h2>
+    <h2>Algumas Histórias...</h2>
 
     <ul>
       <li>
-        <button class="relato" onclick="openRelato()">
+        <button class="relato" onclick="openRelato(this)">
           <div class="nomeRelato">Vitória e Apolo</div>
         </button>
+
+        <div class="relatoDesc">
+          <button class="fechaRelato" onclick="closeReport(this)">X</button>
+    
+          <h2>Vitória e Apolo</h2>
+    
+          <div class="imgData">
+            <img src="Imagens/duquesa.png" alt="">
+            <div class="imgDatas">
+              <div>
+                <h4>Data do resgate:</h4>
+                <p>20/08/2023</p>
+              </div>
+    
+              <div>
+                <h4>Data da Adoção:</h4>
+                <p>12/01/2024</p>
+              </div>
+            </div>
+          </div>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <a class="instaTutor" target="_blank" href="https://bit.ly/3OG8R9z">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram da Vitória
+          </a>
+        </div>
       </li>
 
       <li>
-        <button class="relato" onclick="openRelato()">
+        <button class="relato" onclick="openRelato(this)">
           <div class="nomeRelato">Vitória e Apolo</div>
         </button>
+
+        <div class="relatoDesc">
+          <button class="fechaRelato" onclick="closeReport(this)">X</button>
+    
+          <h2>Vitória e Apolo</h2>
+    
+          <div class="imgData">
+            <img src="Imagens/duquesa.png" alt="">
+            <div class="imgDatas">
+              <div>
+                <h4>Data do resgate:</h4>
+                <p>20/08/2023</p>
+              </div>
+    
+              <div>
+                <h4>Data da Adoção:</h4>
+                <p>12/01/2024</p>
+              </div>
+            </div>
+          </div>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <a class="instaTutor" target="_blank" href="https://bit.ly/3OG8R9z">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram da Vitória
+          </a>
+        </div>
       </li>
 
       <li>
-        <button class="relato" onclick="openRelato()">
+        <button class="relato" onclick="openRelato(this)">
           <div class="nomeRelato">Vitória e Apolo</div>
         </button>
+
+        <div class="relatoDesc">
+          <button class="fechaRelato" onclick="closeReport(this)">X</button>
+    
+          <h2>Vitória e Apolo</h2>
+    
+          <div class="imgData">
+            <img src="Imagens/duquesa.png" alt="">
+            <div class="imgDatas">
+              <div>
+                <h4>Data do resgate:</h4>
+                <p>20/08/2023</p>
+              </div>
+    
+              <div>
+                <h4>Data da Adoção:</h4>
+                <p>12/01/2024</p>
+              </div>
+            </div>
+          </div>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <a class="instaTutor" target="_blank" href="https://bit.ly/3OG8R9z">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram da Vitória
+          </a>
+        </div>
       </li>
 
       <li>
-        <button class="relato" onclick="openRelato()">
+        <button class="relato" onclick="openRelato(this)">
           <div class="nomeRelato">Vitória e Apolo</div>
         </button>
+
+        <div class="relatoDesc">
+          <button class="fechaRelato" onclick="closeReport(this)">X</button>
+    
+          <h2>tu e Apolo</h2>
+    
+          <div class="imgData">
+            <img src="Imagens/duquesa.png" alt="">
+            <div class="imgDatas">
+              <div>
+                <h4>Data do resgate:</h4>
+                <p>20/08/2023</p>
+              </div>
+    
+              <div>
+                <h4>Data da Adoção:</h4>
+                <p>12/01/2024</p>
+              </div>
+            </div>
+          </div>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <a class="instaTutor" target="_blank" href="https://bit.ly/3OG8R9z">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram da Vitória
+          </a>
+        </div>
       </li>
 
       <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
+        <button class="relato" onclick="openRelato(this)">
+          <div class="nomeRelato">Vitória e Apolo</div>
         </button>
-      </li>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
+        <div class="relatoDesc">
+          <button class="fechaRelato" onclick="closeReport(this)">X</button>
+    
+          <h2>eu e Apolo</h2>
+    
+          <div class="imgData">
+            <img src="Imagens/duquesa.png" alt="">
+            <div class="imgDatas">
+              <div>
+                <h4>Data do resgate:</h4>
+                <p>20/08/2023</p>
+              </div>
+    
+              <div>
+                <h4>Data da Adoção:</h4>
+                <p>12/01/2024</p>
+              </div>
+            </div>
+          </div>
+    
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+          
+          <p class="relatoText">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt architecto, amet itaque quam inventore aperiam voluptas eum atque autem explicabo dolorem aspernatur quibusdam laboriosam quas cum minima dolor deserunt suscipit."</p>
+    
+          <a class="instaTutor" target="_blank" href="https://bit.ly/3OG8R9z">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram da Vitória
+          </a>
+        </div>
       </li>
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+    </ul>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+    <h3>Clique nas imagens acima para ver que nosso trabalho vale a pena</h3>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+    <a href="https://bit.ly/3OG8R9z" target="_blank">
+      <i class="fa-brands fa-whatsapp" ></i> 
+      Envie-nos seu relato no Whatsapp!
+    </a>
+  </section>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+  <section id="secAdocao">
+    <h2>Nossos Felinos...</h2>
 
+    <ul>
       <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+        <button class="felino" onclick="openFelino('Apolo')"
+          style="background-image: url('Imagens/gato-laranja.jpg');">
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+          <div class="nomeFelino">Apolo</div>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
+          <div id="Apolo" class="felinoDesc">
+            <button class="fechaRelato" onclick="closeReport(this)">X</button>
+            
+            <h2>Apolo</h2>
+            
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
 
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
-
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
-
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
-
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
-
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
-        </button>
-      </li>
-
-      <li>
-        <button class="relato" onclick="openRelato()">
-          <div class="nomeRelato">Nome</div>
+          </div>
         </button>
       </li>
     </ul>
 
-    <h3>Envie-nos seu relato no Whatsapp!</h3>
-    <a href=""></a>
+    <h3>Clique nas imagens acima para ver nossas fofuras!</h3>
 
-    <div id="relatoDesc">
-      
+    <p>Estes são apenas alguns dos nossos felinos... <br>
+      Temos mais de 70 bichinhos aguardando seus cuidados!
+    </p>
 
-    </div>
+    <h4>
+      <i class="fa-solid fa-circle-down"></i>
+      Envie-nos uma mensagem e conheça seu novo melhor amigo
+      <i class="fa-solid fa-circle-down"></i>
+    </h4>
+    
+    <a href="https://bit.ly/3OG8R9z" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      Quero adotar um gatinho!
+    </a>
+
   </section>
-
 
 </body>
 </html>

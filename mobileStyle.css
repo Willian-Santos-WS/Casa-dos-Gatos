@@ -1,0 +1,40 @@
+
+@media all and (max-width: 600px) {
+
+  section {
+    padding-top: 0;
+  }
+
+  #secHome {
+    padding-top: 5vh;
+  }
+
+  #secHome header{
+    position: absolute;
+  }
+
+  #logo h1 {
+    font-size: calc(4vmin);
+  }
+  
+  #logo h2 {
+    font-size: calc(3vmin);
+  }
+
+  #navHeader {
+    display: none;
+  }
+
+  header #menuHeader {
+    display: block;
+  }
+
+  #instNavegue {
+    right: 5vw;
+  }
+  
+  .imgData .imgDatas {
+    flex-direction: row;
+    gap: 10vw;
+  }
+}

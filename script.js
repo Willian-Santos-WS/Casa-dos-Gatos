@@ -9,14 +9,29 @@ const openMenu = () => {
   navMenu.style.display = 'block';
 }
 
-addEventListener('scroll', () => {
-  if (window.innerWidth < 600) {
-    closeMenu();
+const openRelato = (x) => {
+  x.parentNode.lastElementChild.style.display = 'flex';
+  document.querySelector('.fechaRelato').style.position = 'fixed';
+  document.querySelector('html').style.overflow = 'hidden';
+}
 
-    if (window.scrollY > 100) {
-      botaoMenu.style.display = 'block';
-    } else {
-      botaoMenu.style.display = 'none';
-    }
+const closeReport = (x) => {
+  x.parentNode.style.display = 'none';
+  document.querySelector('.fechaRelato').style.position = 'absolute';
+  document.querySelector('html').style.overflow = '';
+}
+
+addEventListener('scroll', () => {
+  closeMenu();
+
+  if (window.scrollY > 100 && window.innerWidth < 601) {
+    botaoMenu.style.display = 'block';
+  } else {
+    botaoMenu.style.display = 'none';
   }
 })
+
+const openFelino = (id) => {
+  document.querySelector('#' + id).style.display = 'flex';
+  document.querySelector('.fechaRelato').style.position = 'fixed';
+}
