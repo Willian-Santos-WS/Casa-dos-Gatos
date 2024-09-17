@@ -479,9 +479,11 @@ header #menuHeader i {
   font-size: calc(.5vh + 2.2vmin);
 }
 
-#secAdocao .felino .felinoDesc {
+#secAdocao .felinoDesc {
   color: #C19909;
   display: none;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -491,7 +493,7 @@ header #menuHeader i {
   z-index: 2;
 }
 
-#secAdocao .felino .felinoDesc h2 {
+#secAdocao .felinoDesc h2 {
   color: #C19909;
   position: absolute;
   z-index: 3;
