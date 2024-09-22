@@ -5,8 +5,17 @@
   scroll-behavior: smooth; 
 }
 
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
 body {
-  background-color: #F1F6E0;
+  background-color: #ece8d6;
 }
 
 #botaoMenu {
@@ -83,7 +92,7 @@ body {
 #navMenu a {
   color: #F1F6E0;
   display: block;
-  font-family: cursive;
+  font-family:cursive;
   font-weight: bolder;
   text-decoration: none;
   padding: 2vh 0px;
@@ -116,7 +125,7 @@ header {
   width: 100%;
   padding: 1vh 1.5vw 1vh 0;
   box-shadow: 0px 0px 10px #F1F6E0;
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
   z-index: 1;
 }
 
@@ -238,7 +247,7 @@ header #menuHeader i {
 #navHome a{
   color: #F1F6E0;
   display: block;
-  font-family: 'Archivo Black', cursive;
+  font-family: 'MyWebFont', Arial, sans-serif;
   font-size: calc(1vh + 1vmin);
   font-weight: bolder;
   text-align: center;
@@ -268,7 +277,7 @@ header #menuHeader i {
 #secHome footer {
   color: #F1F6E0;
   font-size: calc(.8vh + 1.5vmin);
-  font-family: cursive;
+  font-family: 'MyWebFont', Arial, sans-serif;
   position: absolute;
   text-align: center;
   bottom: 0;
@@ -304,7 +313,17 @@ header #menuHeader i {
 }
 
 #secSobre {
-  
+  height: max-content;
+}
+
+#secSobre div {
+  width: 90%;
+  text-indent: 10px;
+}
+
+#secSobre h2{
+  color: #C19909;
+  font-family: 'Archivo Black';
 }
 
 #secSobre h2, #secSobre h3 {
@@ -328,7 +347,7 @@ header #menuHeader i {
   padding: 1vh;
   gap: 1vh;
   width: 85vw;
-  max-width: 900px;
+  max-width: 1000px;
   overflow-x: scroll;
   border: 8px solid #09C1B6;
   border-radius: 15px;
@@ -402,7 +421,7 @@ header #menuHeader i {
   font-family: 'Archivo black';
   font-size: 4vmin;
   font-weight: bolder;
-  position: absolute;
+  position: fixed;
   top: 1vh;
   right: 5vmin;
   width: 8vmin;
@@ -434,14 +453,14 @@ header #menuHeader i {
   border-radius: 15px;
 }
 
-#secRelatos .relatoDesc img {
+#secRelatos .relatoDesc img, #secAdocao .felinoDesc img {
   width: 85vw;
   max-width: 350px;
-  border: 8px solid #09C1B6;
+  border: 8px solid #338392;
   border-radius: 20px;
 }
 
-.imgData .imgDatas {
+#secRelatos .imgData .imgDatas {
   font-size: calc(1vh + 2vmin);
   font-family: 'Archivo Black';
   display: flex;
@@ -450,7 +469,7 @@ header #menuHeader i {
   gap: 6vw;
 }
 
-.imgData .imgDatas h4 {
+#secRelatos .imgData .imgDatas h4 {
   color: #C19909;
   text-decoration: underline;
 }
@@ -479,32 +498,12 @@ header #menuHeader i {
   font-size: calc(.5vh + 2.2vmin);
 }
 
-#secAdocao .felinoDesc {
-  color: #C19909;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #F1F6E0;
-  z-index: 2;
-}
-
-#secAdocao .felinoDesc h2 {
-  color: #C19909;
-  position: absolute;
-  z-index: 3;
-}
-
 #secAdocao h3 {
   color: #09C1B6;
   font-family: cursive;
 }
 
-#secAdocao p {
+#secAdocao #instrucaoAdote {
   color: #F1F6E0;
   font-weight: 700;
   text-align: center;
@@ -526,4 +525,85 @@ header #menuHeader i {
   padding: 1vh 2vh;
   border-radius: 20px;
   background-color: #62d355;
+}
+
+#secAdocao .indisponivel .nomeFelino {
+  background-color: #c19909b1;
+}
+
+#secAdocao .felinoDesc {
+  color: #C19909;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ece8d6;
+  z-index: 2;
+}
+
+#secAdocao .felinoDesc h2 {
+  color: #338392;
+  margin: 3vh;
+  z-index: 3;
+}
+
+#secAdocao .felinoDesc .trocaFelino {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  max-width: 800px;
+}
+
+#secAdocao .felinoDesc .trocaFelino button{
+  color: #ece8d6;
+  font-family: cursive;
+  font-size: 5vmin;
+  padding: 5px;
+  height: 30vh;
+  background-color: #1b9b8d;
+  cursor: pointer;
+}
+
+#secAdocao .felinoDesc .caractFelino {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 3vw;
+}
+
+#secAdocao .felinoDesc .caractFelino div {
+  color: #338392;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmin;
+}
+
+#secAdocao .felinoDesc img{
+  width: auto;
+  height: 80vw;
+  max-height: 400px;
+}
+
+#secAdocao .felinoDesc .textoFelino {
+  margin: 2vh;
+  border-radius: 15px;
+}
+
+#secAdocao .felinoDesc p {
+  color: #ece8d6;
+  text-align: left;
+  text-indent: 10px;
+  width: 90vw;
+  max-width: 800px;
+  margin: 1vh;
+  padding: 1vmin;
+  border-radius: 15px;
+  background-color: #338392;
 }

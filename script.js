@@ -21,6 +21,11 @@ const closeReport = (x) => {
   document.querySelector('html').style.overflow = '';
 }
 
+const trocaFelino = (a, b) => {
+  closeReport(a);
+  openFelino(b)
+}
+
 addEventListener('scroll', () => {
   closeMenu();
 
@@ -34,4 +39,5 @@ addEventListener('scroll', () => {
 const openFelino = (id) => {
   document.querySelector('#' + id).style.display = 'flex';
   document.querySelector('.fechaRelato').style.position = 'fixed';
+  document.querySelector('html').style.overflow = 'hidden';
 }
