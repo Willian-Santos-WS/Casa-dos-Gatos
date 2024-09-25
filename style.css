@@ -5,15 +5,6 @@
   scroll-behavior: smooth; 
 }
 
-@font-face{ 
-	font-family: 'MyWebFont';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');
-}
-
 body {
   background-color: #ece8d6;
 }
@@ -313,22 +304,81 @@ header #menuHeader i {
 }
 
 #secSobre {
+  text-align: center;
+  min-height: 100vh;
   height: max-content;
 }
 
-#secSobre div {
-  width: 90%;
-  text-indent: 10px;
+#secSobre #apresentaSobre {
+  margin: 5vh 2vmin;
 }
 
-#secSobre h2{
+#secSobre .buttonSobre {
+  display: flex;
+  align-items: end;
+  width: 30vmin;
+  height: 20vmin;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#secSobre .buttonSobre div {
+  width: 100%;
+  padding: 3px;
+  border-radius: 0 0 15px 15px;
+  background-color: #C19909;
+}
+
+#secSobre h2 {
   color: #C19909;
   font-family: 'Archivo Black';
 }
 
-#secSobre h2, #secSobre h3 {
-  align-self: flex-start;
-  margin: 5vh 10vmin;
+#secSobre h3 {
+  color: #1b9b8d;
+  font-family: 'Archivo Black';
+  font-size: calc(1.5vh + 1vmin);
+}
+
+#secSobre .descSobre {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  top: 0;
+  left: 0;
+  height: 100%; 
+  width: 100%;
+  overflow-y: auto;
+  background-color: #ece8d6;
+  z-index: 3;
+}
+
+#secSobre ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  list-style: none;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#secSobre ul li {
+  text-align: left;
+  width: 100%;
+}
+
+#secSobre h4 {
+  font-family: 'Archivo Black';
+  color: #1b9b8d;
+  font-size: calc(1.2vh + 2.5vmin);
+}
+
+#secSobre ul li p {
+  color: #C19909;
+  font-family: cursive;
+  text-indent: 20px;
 }
 
 #secRelatos h2, #secAdocao h2 {
@@ -412,7 +462,7 @@ header #menuHeader i {
   width: 100%;
   height: 100vh;
   overflow-y: auto;
-  background-color: #F1F6E0;
+  background-color: #ece8d6;
   z-index: 3;
 }
 
@@ -543,7 +593,7 @@ header #menuHeader i {
   width: 100%;
   height: 100%;
   background-color: #ece8d6;
-  z-index: 2;
+  z-index: 3;
 }
 
 #secAdocao .felinoDesc h2 {
