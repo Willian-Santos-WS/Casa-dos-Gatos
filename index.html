@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Italianno&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobileStyle.css">
@@ -39,9 +40,9 @@
   <section id="secHome">
     <header>
       <a href="#secHome" id="logo">
-        <img src="Imagens/logo-CDG.png" alt="Logo Casa dos Gatos">
+        <img src="Imagens/logo-fundo-edit.png" alt="Logo Casa dos Gatos">
         <div>
-          <h1>CDG</h1>
+          <h1>CDG Araraquara</h1>
           <h2>Casa dos Gatos</h2>
         </div>
       </a>
@@ -69,7 +70,7 @@
     
     <div id="homeApresentation">
       <h2>Porque o amor não cabe em uma vida...</h2>
-      <img src="Imagens/gatinho-branco-menor.jpeg" alt="Gato fofinho">
+      <img src="Imagens/03.jpg" alt="Gato fofinho">
     </div>
 
     <ul id="navHome">
@@ -140,16 +141,16 @@
           
         </p>
       </li>
-      <h4>Essa é a CDG, um lugar miauvilhoso que tem muitos resgatinhos ❤ </h4>
-      
-      <p>
-        Este site é um projeto ainda em desenvolvimento e podem ser encontradas falhas em algumas funcionalidades ou botões e imagens mal renderizadas. Desde já, agradecemos a compreensão e informamos que, em breve, virão melhorias.
-        <br>
-        Para navegar no site, basta rolar a página utilizando o mouse ou clicar nos tópicos no topo da tela.<i class="fa-solid fa-hand-point-up"></i>
-        <br>
-        Se estiver no celular, clique nos três pontinhos no canto superior direito da tela para abrir o menu.
-      </p>
+      <h4>Essa é a CDG, um lugar miauvilhoso que tem muitos resgatinhos <i class="fa-solid fa-heart"></i> </h4>
     </ul>
+
+    <p id="instrucaoSobre">
+      Este site é um projeto ainda em desenvolvimento e podem ser encontradas falhas em algumas funcionalidades ou botões e imagens mal renderizadas. Desde já, agradecemos a compreensão e informamos que, em breve, virão melhorias.
+      <br>
+      Para navegar no site, basta rolar a página utilizando o mouse ou clicar nos tópicos no topo da tela. <i class="fa-solid fa-hand-point-up"></i>
+      <br>
+      Se estiver no celular, clique nos três pontinhos no canto superior direito da tela para abrir o menu.
+    </p>
     
     <!--
     <ul>
@@ -224,7 +225,8 @@
       </p>
       <p>Envie-nos uma mensagem no WhatsApp para ver quais serviços estão disponíveis.</p>
     </div>
-    -->
+      -->
+    
   </section>
 
   <section id="secRelatos">
@@ -957,7 +959,7 @@
               <div>
                 <h3>Idade: </h3>
                 <h3>Sexo: Fêmea</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
               <img src="Imagens/monica.jpg" alt="Gata Mônica">
             </div>
@@ -1000,7 +1002,7 @@
               <div>
                 <h3>Idade: </h3>
                 <h3>Sexo: Fêmea</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
               <img src="Imagens/meg.jpg" alt="Gata Meg">
             </div>
@@ -1049,13 +1051,13 @@
               <div>
                 <h3>Idade: </h3>
                 <h3>Sexo: Macho</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
 
               <img src="Imagens/galak.jpg" alt="Gato Galak">
             </div>
 
-            <button class="proxFelino" onclick="trocaFelino(this.parentNode, 'minotauro')">
+            <button class="proxFelino" onclick="trocaFelino(this.parentNode, 'fu')">
               >
             </button>
           </div>
@@ -1079,6 +1081,7 @@
         
       </li>
 
+      <!-- MINOTAURO - FELINO INDISPONÍVEL
       <li>
         <button class="felino indisponivel" onclick="openFelino('minotauro')"
           style="background-image: url('Imagens/minotauro.jpg');">
@@ -1130,6 +1133,7 @@
         </div>
         
       </li>
+      -->
 
       <li>
         <button class="felino" onclick="openFelino('fu')"
@@ -1144,7 +1148,7 @@
           <h2>Fu</h2>
           
           <div class="trocaFelino">
-            <button class="antFelino" onclick="trocaFelino(this.parentNode, 'minotauro')">
+            <button class="antFelino" onclick="trocaFelino(this.parentNode, 'galak')">
               <
             </button>
 
@@ -1152,7 +1156,7 @@
               <div>
                 <h3>Idade: 3 anos</h3>
                 <h3>Sexo: Macho</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
 
               <img src="Imagens/fu.jpg" alt="Gato Fu">
@@ -1207,7 +1211,7 @@
               <div>
                 <h3>Idade: </h3>
                 <h3>Sexo: Macho</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
               <img src="Imagens/kong.jpg" alt="Gato Kong">
             </div>
@@ -1260,7 +1264,7 @@
               <div>
                 <h3>Idade: Filhote</h3>
                 <h3>Sexo: Fêmea</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
               <img src="Imagens/florzinha.jpg" alt="Gata Florzinha">
             </div>
@@ -1310,7 +1314,7 @@
               <div>
                 <h3>Idade: 7 meses</h3>
                 <h3>Sexo: Macho</h3>
-                <h3>Disponível: Sim</h3>
+                <h3>FIV ou FeLV: Não</h3>
               </div>
               <img src="Imagens/kadu.jpg" alt="Gato Kadu">
             </div>
@@ -1365,7 +1369,7 @@
   <section id="secFacaParte">
     <h2>Faça parte</h2>
 
-    <p>
+    <p style="text-indent: 20px;">
       Caso tenha mais de 18 anos, você pode ser voluntário no gatil, ajudando na limpeza e alimentação dos gatinhos. 
       Esse trabalho demanda pelo menos 1 hora do seu tempo 1 vez por semana e consiste em trocar a água dos potes, colocar ração nos comedouros e ajudar na limpeza das caixas de areia. Ah! E também tá liberado brincar com os gatinhos e dar muito carinho!      
     </p>
@@ -1375,20 +1379,45 @@
     <ul>
       <li>Limpeza do gatil;</li>
       <li>Carinho e atenção para amansar gatinhos assustados;</li>
-      <li>Leva e traz de animais doentes ao veterinário</li>
-      <li>Arrecadação de alimentos em casas de ração (1 vez por mês)</li>
-      <li>Marketing Digital</li>
-      <li>Faz tudo (encanador, pintor, pedreiro, etc.)</li>
+      <li>Leva e traz de animais doentes ao veterinário;</li>
+      <li>Arrecadação de alimentos em casas de ração (1 vez por mês);</li>
+      <li>Marketing Digital;</li>
+      <li>Faz tudo (encanador, pintor, pedreiro, etc.);</li>
       <li>Lar temporário para filhotes, entre outros.</li>    
     </ul>
+
+    <p>Você também pode ajudar nas campanhas de ração que a CDG faz! 
+    </p>
     
     <h4>Envie-nos uma mensagem para ver quais serviços estão disponíveis.</h4>
 
-    <a href="">WhatsApp</a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i> Quero ser um voluntário!</a>
   </section>
 
   <section id="secDoacao">
-    <h2>Ajude a CDG</h2>
+    <h2>A vida é corrida e não dá pra ajudar como voluntário?</h2> 
+
+    <h3>Não tem problema! Você pode doar ração, medicamentos, ou ainda ajudar a ONG através do Pix:</h3>
+
+    <div id="chavePix">
+      <img src="Imagens/QrCode.png" alt="">
+
+      <div>
+        <p>CHAVE PIX:</p>
+        <p>cdgararaquara@gmail.com</p>
+        <a href="" target="_blank">Outras formas de doar</a>
+      </div>
+    </div>
+
+    <p>Participando das rifas ou comprando as roupas do brechó da CDG, você também ajuda nossos gatinhos!</p>
+
+    <p>
+      A CdG sobrevive apenas de doações e trabalho voluntário, por isso sua ajuda é tão importante pra nós. 
+      <br>
+      Toda doação, seja de tempo, mantimentos, medicamentos, ou dinheiro, faz com que consigamos cuidar dos gatinhos e dar uma vida mais longa e digna a eles. 
+      </p>
+
+    <h4>Transforme o mundo em um lugar melhor pros resgatinhos.</h4>
   </section>
 
 </body>

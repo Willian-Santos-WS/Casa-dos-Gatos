@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ece8d6;
+  background-color: #f1f6e1;
 }
 
 #botaoMenu {
@@ -83,7 +83,7 @@ body {
 #navMenu a {
   color: #F1F6E0;
   display: block;
-  font-family:cursive;
+  font-family: 'Playpen Sans', Arial, sans-serif;
   font-weight: bolder;
   text-decoration: none;
   padding: 2vh 0px;
@@ -116,12 +116,12 @@ header {
   width: 100%;
   padding: 1vh 1.5vw 1vh 0;
   box-shadow: 0px 0px 10px #F1F6E0;
-  background-color: #1b9b8d;
+  background-color: #03989e;
   z-index: 1;
 }
 
 #logo {
-  color: #F1F6E0;
+  color: #ffffff;
   font-family: 'Lilita One';
   display: flex;
   align-items: center;
@@ -149,9 +149,10 @@ header {
 
 #navHeader a {
   color: #F1F6E0;
-  font-family: 'Archivo Black';
+  font-family: 'Playpen Sans', Arial, sans-serif;
   text-decoration: none;
   font-size: 1.8vmin;
+  font-weight: 800;
   padding: 2px 1vw;
   border-left: 2px solid #F1F6E0;
 }
@@ -217,11 +218,9 @@ header #menuHeader i {
 }
 
 #homeApresentation img {
-  width: 50vw;
-  max-width: 300px;
-  aspect-ratio: 2/2;
-  border-radius: 360px;
-  box-shadow: 0px 0px 10px #C19909;
+  width: 50vmin;
+  height: 50vmin;  
+  border-radius: 100px;
 }
 
 #navHome {
@@ -238,7 +237,7 @@ header #menuHeader i {
 #navHome a{
   color: #F1F6E0;
   display: block;
-  font-family: 'MyWebFont', Arial, sans-serif;
+  font-family: 'Playpen Sans', Arial, sans-serif;
   font-size: calc(1vh + 1vmin);
   font-weight: bolder;
   text-align: center;
@@ -268,7 +267,7 @@ header #menuHeader i {
 #secHome footer {
   color: #F1F6E0;
   font-size: calc(.8vh + 1.5vmin);
-  font-family: 'MyWebFont', Arial, sans-serif;
+  font-family: 'Playpen Sans', Arial, sans-serif;
   position: absolute;
   text-align: center;
   bottom: 0;
@@ -304,6 +303,7 @@ header #menuHeader i {
 }
 
 #secSobre {
+  font-family: 'Playpen Sans', Arial, sans-serif;
   text-align: center;
   min-height: 100vh;
   height: max-content;
@@ -313,30 +313,12 @@ header #menuHeader i {
   margin: 5vh 2vmin;
 }
 
-#secSobre .buttonSobre {
-  display: flex;
-  align-items: end;
-  width: 30vmin;
-  height: 20vmin;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-#secSobre .buttonSobre div {
-  width: 100%;
-  padding: 3px;
-  border-radius: 0 0 15px 15px;
-  background-color: #C19909;
-}
-
 #secSobre h2 {
   color: #C19909;
-  font-family: 'Archivo Black';
 }
 
 #secSobre h3 {
   color: #1b9b8d;
-  font-family: 'Archivo Black';
   font-size: calc(1.5vh + 1vmin);
 }
 
@@ -370,15 +352,30 @@ header #menuHeader i {
 }
 
 #secSobre h4 {
-  font-family: 'Archivo Black';
   color: #1b9b8d;
   font-size: calc(1.2vh + 2.5vmin);
 }
 
+#secSobre h4 i {
+  color: red;
+}
+
 #secSobre ul li p {
   color: #C19909;
-  font-family: cursive;
+  font-family: 'Playpen Sans', Arial, sans-serif;
   text-indent: 20px;
+}
+
+#secSobre #instrucaoSobre {
+  color: #ece8d6;
+  font-family: 'Archivo Black';
+  font-size: calc(.5vh + 1.5vmin);
+  width: 90%;
+  max-width: 800px;
+  margin: 3vh 0 1vh;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #1b9b8d;
 }
 
 #secRelatos h2, #secAdocao h2 {
@@ -656,4 +653,61 @@ header #menuHeader i {
   padding: 1vmin;
   border-radius: 15px;
   background-color: #338392;
+}
+
+#secFacaParte {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#secFacaParte h2, #secFacaParte h3, #secFacaParte h4 {
+  color: #09C1B6;
+}
+
+#secFacaParte p {
+  color: #C19909;
+  max-width: 90%;
+}
+
+#secFacaParte ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#secFacaParte ul li {
+  color: #C19909;
+  margin-bottom: 10px;
+}
+
+#secFacaParte a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #62d355;
+  color: #F1F6E0;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#secFacaParte a:hover {
+  background-color: #C19909;
+  color: #F1F6E0;
+}
+
+#secDoacao {
+  text-align: center;
+}
+
+#secDoacao #chavePix {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmin;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#secDoacao img {
+  width: 60vmin;
 }
