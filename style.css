@@ -12,7 +12,7 @@ body {
 #botaoMenu {
   display: none;
   position: fixed;
-  color: #09C1B6;
+  color: #1b9b8d;
   font-size: calc(4vh);
   width: 8vh;
   height: 8vh;
@@ -35,7 +35,7 @@ body {
   width: 60vw;
   max-width: 400px;
   border-radius: 0px 0px 0px 80px;
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
   z-index: 2;
 }
 
@@ -65,6 +65,7 @@ body {
   align-items: center;
   list-style: none;
   margin: 8vh auto 5vh;
+  transition: all 2s ease-out;
 }
 
 #navMenu li {
@@ -114,9 +115,9 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1vh 1.5vw 1vh 0;
+  padding: .3vh;
   box-shadow: 0px 0px 10px #F1F6E0;
-  background-color: #03989e;
+  background-color: #1b9b8d;
   z-index: 1;
 }
 
@@ -130,8 +131,8 @@ header {
 }
 
 #logo img {
-  height: 6vh;
-  margin: 0 2vmin;
+  height: 8vh;
+  margin: 0 1vmin;
 }
 
 #logo h1 {
@@ -257,11 +258,11 @@ header #menuHeader i {
 }
 
 #homeAdote a{
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
 }
 
 #navHome #homeAdote a:hover {
-  box-shadow: 0px 0px 10px #09C1B6;
+  box-shadow: 0px 0px 10px #1b9b8d;
 }
 
 #secHome footer {
@@ -273,7 +274,7 @@ header #menuHeader i {
   bottom: 0;
   width: 100%;
   height: max-content;
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
 }
 
 #secHome footer div {
@@ -294,6 +295,10 @@ header #menuHeader i {
   background-color: #F1F6E0;
 }
 
+#secHome footer a:hover {
+  box-shadow: 0px 0px 15px;
+}
+
 #secHome footer #insta {
   color: #e96bc2;
 }
@@ -310,7 +315,7 @@ header #menuHeader i {
 }
 
 #secSobre #apresentaSobre {
-  margin: 5vh 2vmin;
+  margin: 7vh 2vmin;
 }
 
 #secSobre h2 {
@@ -378,6 +383,11 @@ header #menuHeader i {
   background-color: #1b9b8d;
 }
 
+#secRelatos ul h3 {
+  text-align: center;
+  font-size: 5vmin;
+}
+
 #secRelatos h2, #secAdocao h2 {
   color: #C19909;
   font-family: 'Italianno';
@@ -396,9 +406,9 @@ header #menuHeader i {
   width: 85vw;
   max-width: 1000px;
   overflow-x: scroll;
-  border: 8px solid #09C1B6;
+  border: 8px solid #1b9b8d;
   border-radius: 15px;
-  scrollbar-color: #F1F6E0 #09C1B6;
+  scrollbar-color: #F1F6E0 #1b9b8d;
 }
 
 #secRelatos .relato, #secAdocao .felino {
@@ -445,7 +455,7 @@ header #menuHeader i {
 }
 
 #secRelatos a:hover {
-  box-shadow: 0px 0px 10px #09C1B6;
+  box-shadow: 0px 0px 10px #1b9b8d;
 }
 
 #secRelatos .relatoDesc {
@@ -474,7 +484,7 @@ header #menuHeader i {
   width: 8vmin;
   height: 8vmin;
   border-radius: 15px;
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
   cursor: pointer;
   z-index: 3;
 }
@@ -503,7 +513,7 @@ header #menuHeader i {
 #secRelatos .relatoDesc img, #secAdocao .felinoDesc img {
   width: 85vw;
   max-width: 350px;
-  border: 8px solid #338392;
+  border: 8px solid #1b9b8d;
   border-radius: 20px;
 }
 
@@ -537,16 +547,16 @@ header #menuHeader i {
   border-radius: 10px;
   padding: 1.5vh;
   margin-bottom: 3vh;
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
 }
 
 #secAdocao {
-  font-family: cursive;
+  font-family: 'Playpen Sans';
   font-size: calc(.5vh + 2.2vmin);
 }
 
 #secAdocao h3 {
-  color: #09C1B6;
+  color: #1b9b8d;
   font-family: cursive;
 }
 
@@ -557,7 +567,7 @@ header #menuHeader i {
   text-shadow: 0px 0px 2px black;
   border-radius: 15px;
   padding: 1vh 2vmin;
-  background-color: #09C1B6;
+  background-color: #1b9b8d;
 }
 
 #secAdocao h4 {
@@ -567,7 +577,6 @@ header #menuHeader i {
 
 #secAdocao a {
   color: #F1F6E0;
-  font-family: cursive;
   text-decoration: none;
   padding: 1vh 2vh;
   border-radius: 20px;
@@ -594,7 +603,7 @@ header #menuHeader i {
 }
 
 #secAdocao .felinoDesc h2 {
-  color: #338392;
+  color: #1b9b8d;
   margin: 3vh;
   z-index: 3;
 }
@@ -609,7 +618,7 @@ header #menuHeader i {
 
 #secAdocao .felinoDesc .trocaFelino button{
   color: #ece8d6;
-  font-family: cursive;
+  font-family: 'Playpen Sans';
   font-size: 5vmin;
   padding: 5px;
   height: 30vh;
@@ -626,7 +635,7 @@ header #menuHeader i {
 }
 
 #secAdocao .felinoDesc .caractFelino div {
-  color: #338392;
+  color: #1b9b8d;
   display: flex;
   flex-direction: column;
   gap: 2vmin;
@@ -652,16 +661,26 @@ header #menuHeader i {
   margin: 1vh;
   padding: 1vmin;
   border-radius: 15px;
-  background-color: #338392;
+  background-color: #1b9b8d;
 }
 
 #secFacaParte {
+  font-family: 'Playpen Sans';
   align-items: center;
+  justify-content: space-evenly;
+  padding: 7vh 5vmin;
+  height: max-content;
   justify-content: space-evenly;
 }
 
 #secFacaParte h2, #secFacaParte h3, #secFacaParte h4 {
-  color: #09C1B6;
+  color: #1b9b8d;
+  text-align: center;
+  margin: 1.5vh 0;
+}
+
+#secFacaParte h2, #secFacaParte h3 {
+  font-size: calc(1vh + 3vmin); 
 }
 
 #secFacaParte p {
@@ -686,16 +705,26 @@ header #menuHeader i {
   background-color: #62d355;
   color: #F1F6E0;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 #secFacaParte a:hover {
-  background-color: #C19909;
+  box-shadow: 0px 0px 10px #62d355;
   color: #F1F6E0;
 }
 
 #secDoacao {
+  font-family: 'Playpen Sans', Arial, sans-serif;
   text-align: center;
+  font-size: calc(1vh + 1.5vmin);
+}
+
+#secDoacao h2 {
+  color: #C19909;
+}
+
+#secDoacao h3, #secDoacao h4 {
+  color: #1b9b8d;
 }
 
 #secDoacao #chavePix {
@@ -703,11 +732,34 @@ header #menuHeader i {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 5vmin;
+  gap: 4vmin;
   width: 90%;
   max-width: 1000px;
 }
 
+#secDoacao #chave {
+  color: #1b9b8d;
+  font-weight: 700;
+}
+
+#secDoacao p {
+  color: #C19909;
+}
+
 #secDoacao img {
   width: 60vmin;
+}
+
+#secDoacao #chavePix a {
+  color: #ece8d6;
+  text-decoration: none;
+  padding: 1vh 3vmin;
+  border-radius: 15px;
+  display: block;
+  margin: 1vh;
+  background-color: #62d355;
+}
+
+#secDoacao #chavePix a:hover {
+  box-shadow: 0px 0px 10px #62d355;
 }
