@@ -669,6 +669,7 @@ header #menuHeader i {
   align-items: center;
   justify-content: space-evenly;
   padding: 7vh 5vmin;
+  min-height: 100vh;
   height: max-content;
   justify-content: space-evenly;
 }
