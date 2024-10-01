@@ -430,7 +430,7 @@ header #menuHeader i {
 
 #secRelatos .nomeRelato, #secAdocao .nomeFelino {
   color: #F1F6E0;
-  font-family: cursive;
+  font-family: 'Playpen Sans', cursive;
   padding: 2%;
   width: 100%;
   height: max-content;
@@ -441,13 +441,13 @@ header #menuHeader i {
 #secRelatos h3 {
   color: #C19909;
   font-size: calc(.3vh + 2.3vmin);
-  font-family: cursive;
+  font-family: 'Playpen Sans', cursive;
 }
 
 #secRelatos a {
   color: #F1F6E0;
   font-size: calc(1h + 1.5vmin);
-  font-family: cursive;
+  font-family: 'Playpen Sans', cursive;
   text-decoration: none;
   padding: 15px;
   border-radius: 20px;
@@ -533,7 +533,7 @@ header #menuHeader i {
 
 #secRelatos .relatoDesc .relatoText {
   color: #C19909;
-  font-family: cursive;
+  font-family: 'Playpen Sans', cursive;
   font-size: calc(1vh + 2vmin);
   width: 90vw;
   max-width: 1000px;
@@ -557,7 +557,7 @@ header #menuHeader i {
 
 #secAdocao h3 {
   color: #1b9b8d;
-  font-family: cursive;
+  font-family: 'Playpen Sans', cursive;
 }
 
 #secAdocao #instrucaoAdote {
@@ -604,6 +604,7 @@ header #menuHeader i {
 
 #secAdocao .felinoDesc h2 {
   color: #1b9b8d;
+  font-family: 'Playpen Sans', cursive;
   margin: 3vh;
   z-index: 3;
 }
@@ -618,7 +619,7 @@ header #menuHeader i {
 
 #secAdocao .felinoDesc .trocaFelino button{
   color: #ece8d6;
-  font-family: 'Playpen Sans';
+  font-family: 'Playpen Sans', cursive;
   font-size: 5vmin;
   padding: 5px;
   height: 30vh;
@@ -665,7 +666,7 @@ header #menuHeader i {
 }
 
 #secFacaParte {
-  font-family: 'Playpen Sans';
+  font-family: 'Playpen Sans', cursive;
   align-items: center;
   justify-content: space-evenly;
   padding: 7vh 5vmin;
@@ -674,13 +675,29 @@ header #menuHeader i {
   justify-content: space-evenly;
 }
 
-#secFacaParte h2, #secFacaParte h3, #secFacaParte h4 {
+#secFacaParte h2 {
+  color: #C19909;
+  font-family: 'Italianno', cursive;
+  font-size: 6vmin;
+  margin: 3vh 0 2vh;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#secFacaParte #instFacaParte {
+  color: #ece8d6;
+  padding: 2vh;
+  border-radius: 15px;
+  background-color: #1b9b8d;
+}
+
+#secFacaParte h3, #secFacaParte h4 {
   color: #1b9b8d;
   text-align: center;
   margin: 1.5vh 0;
 }
 
-#secFacaParte h2, #secFacaParte h3 {
+#secFacaParte h3 {
   font-size: calc(1vh + 3vmin); 
 }
 
@@ -718,6 +735,7 @@ header #menuHeader i {
   font-family: 'Playpen Sans', Arial, sans-serif;
   text-align: center;
   font-size: calc(1vh + 1.5vmin);
+  padding: 0 2vmin;
 }
 
 #secDoacao h2 {
@@ -748,7 +766,8 @@ header #menuHeader i {
 }
 
 #secDoacao img {
-  width: 60vmin;
+  width: 50vmin;
+  max-width: 250px;
 }
 
 #secDoacao #chavePix a {
